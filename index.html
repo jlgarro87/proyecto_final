@@ -5,19 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La CUEVA de NAna - movies&series</title>
+  <script src="https://kit.fontawesome.com/e4042d1af8.js" crossorigin="anonymous"></script>x``
   <link rel="shortcut icon" href="./favivon.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
-<body>
+<body class="modoOscuro">
   <header>
     <nav class="container-fluid navbar fixed-top navbar-expand-md rounded">
-      <a href="./pages/quienes-somos.html ">
-        <img src="/assets/igm/cave-3167206_640.png" alt="imagen del logo de La CUEVA de Nana - movies&series"
-          width="40">
-      </a>
+      <div class="container">
+        <a class="navbar-brand" href="./pages/quienes-somos.html">
+          <img src="./assets/igm/cave-3167206_640.png" alt="imagen del logo de La CUEVA de Nana - movies&series"
+            width="40" height="35">
+        </a>
+      </div>
       <div class="container-fluid">
         <a class="navbar-brand text-light" href="#"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -46,18 +49,21 @@
                 <li><a class="dropdown-item" href="./pages/detalle.html">¿De qué trata?</a></li>
               </ul>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="./pages/api.html">Api</a>
+            </li>
           </ul>
-          <form class="d-flex ms-auto p-2 " role="search">
-            <input class="form-control me-2" type="search" placeholder="¿Qué quieres ver hoy?" aria-label="Buscar">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+          <form class="d-flex ms-auto p-2" role="search">
+            <input class="form-control me-2" type="search" placeholder="¿Qué vemos hoy?">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
           </form>
         </div>
       </div>
     </nav>
 
-
+    <!--carrusel-->
     <section>
-      <div id="carouselExampleDark" class="carousel carousel-dark slide rounded-bottom" data-bs-ride="carousel">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide rounded-bottom" data-bs-ride="carousel" ;>
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -72,7 +78,8 @@
             <div class="carousel-caption">
               <div class="d-flex flex-column mb-3" style="height: 50vh;">
                 <h1>CREED III</h1>
-                <p>Después de dominar el mundo del boxeo, Adonis Creed ha prosperado tanto en su carrera como en su vida
+                <p class="parrafoEstilos">Después de dominar el mundo del boxeo, Adonis Creed ha prosperado tanto en su
+                  carrera como en su vida
                   familiar. Cuando un amigo de la infancia y ex prodigio de boxeo, Damien Anderson, resurge después de
                   cumplir una larga sentencia en prisión, está ansioso por demostrar que merece su disparo en el ring.
                   El enfrentamiento entre los antiguos amigos es más que una pelea. Para resolver el puntaje, Adonis
@@ -82,8 +89,8 @@
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="./assets/igm/gatoConBotas.jpg" class="d-block w-100" alt="Imagen de la pelicula el gato con botas"
-              height="550vh">
+            <img src="./assets/igm/gato_con_botas.jpg" class="d-block w-100"
+              alt="Imagen de la pelicula el gato con botas" height="550vh">
             <div class="carousel-caption">
               <div class="d-flex flex-column mb-3" style="height: 50vh;">
                 <h1>EL GATO CON BOTAS</h1>
@@ -115,15 +122,10 @@
           <span class="visually-hidden">Próximo</span>
         </button>
       </div>
-      <!--colocar loading="lazy" en etiquetas de img para que se vayan cargando con el scroll-->
-
     </section>
-
-
-
   </header>
 
-  <section class="h4 pb-2 mb-4 border-4 border-bottom border-secondary w-100">
+  <section class="h4 pb-2 mb-4">
     <div class="d-flex justify-content-center">
       <h2>¿Qué estas buscando para ver hoy?</h2>
     </div>
@@ -135,37 +137,45 @@
     </div>
   </section>
 
+  <hr class="border border-secondary border-2 opacity-50 m-5">
 
   <main>
-
+    <!--cards-->
     <div class="container-xxl row row-cols-1 row-cols-md-3 g-4 m-5">
       <div class="card">
-        <a href="./pages/detalle.html"> 
+        <a href="./pages/detalle.html">
           <img src="./assets/igm/tarjetas/dead2.jpg" class="card-img" alt="Deadpool">
         </a>
       </div>
       <div class="card">
-          <a href="./pages/detalle.html"><img src="./assets/igm/tarjetas/godzilla.jpg" class="card-img" alt="Godzilla"></a>
-        </div>
-      <div class="card">
-        <a href="./pages/detalle.html"><img src="./assets/igm/tarjetas/intensamente2.jpg" class="card-img" alt="Intensamente2"></a>
+        <a href="./pages/detalle.html"><img src="./assets/igm/tarjetas/godzilla.jpg" class="card-img"
+            alt="Godzilla"></a>
       </div>
       <div class="card">
-        <a href="./pages/detalle.html"><img src="./assets/igm/tarjetas/kungFuPanda.jpg" class="card-img" alt="Kung Fu Panda"></a>
+        <a href="./pages/detalle.html"><img src="./assets/igm/tarjetas/intensamente2.jpg" class="card-img"
+            alt="Intensamente2"></a>
       </div>
       <div class="card">
-        <a href="./pages/detalle.html"><img src="./assets/igm/tarjetas/planetaSimios1.jpg" class="card-img" alt="Planeta de los simios"></a>
+        <a href="./pages/detalle.html"><img src="./assets/igm/tarjetas/kun_fu_panda.jpg" class="card-img"
+            alt="Kung Fu Panda"></a>
+      </div>
+      <div class="card">
+        <a href="./pages/detalle.html"><img src="./assets/igm/tarjetas/planeta_simios1.jpg" class="card-img"
+            alt="Planeta de los simios"></a>
       </div>
       <div class="card">
         <a href="./pages/detalle.html"><img src="./assets/igm/tarjetas/screem.jpg" class="card-img" alt="Scream"></a>
       </div>
       <div class="card">
-        <a href="./pages/detalle.html"><img src="./assets/igm/tarjetas/primeraProfecia.jpg" class="card-img" alt="La primera profecía"></a>
+        <a href="./pages/detalle.html"><img src="./assets/igm/tarjetas/primera_profecia.jpg" class="card-img"
+            alt="La primera profecía"></a>
       </div>
       <div class="card">
-        <a href="./pages/detalle.html"><img src="./assets/igm/tarjetas/imaginario.jpg" class="card-img" alt="Imaginario"></a>
+        <a href="./pages/detalle.html"><img src="./assets/igm/tarjetas/imaginario.jpg" class="card-img"
+            alt="Imaginario"></a>
       </div>
     </div>
+
 
   </main>
   <footer class="container-fluid mt-5 p-5 w-100">
@@ -177,9 +187,10 @@
     </ul>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+  <script src="./js/alerta.js"></script>
 </body>
 
 </html>
-
+<!--se arreglo los vinculos de las imagenes, se coloco fuente interna de mi servidor para fonts, se agregaron iconos con respectivos colores, se han mejorado un poco las imagenes, se ha cambiado a bg en vez de carrusel la imagen de fondo en pagina detalle, se ha mejorado mejorado la pagina de inicio de sesion, se crea pag de api y validacion en inicio de sesion--!>

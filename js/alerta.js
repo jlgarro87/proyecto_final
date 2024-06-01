@@ -1,0 +1,1 @@
+alert("Esta página solo es utulizada para fines educativos sin fines de lucro.")
